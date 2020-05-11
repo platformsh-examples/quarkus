@@ -26,7 +26,7 @@ import org.jboss.resteasy.annotations.jaxrs.PathParam;
 @ApplicationScoped
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class AnimalResponse {
+public class AnimalResource {
 
     @Inject
     EntityManager entityManager;
