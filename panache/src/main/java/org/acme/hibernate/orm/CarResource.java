@@ -34,7 +34,7 @@ public class CarResource {
 
         Car entity = Car.findById(id);
         if (entity == null) {
-            throw new WebApplicationException("Animal with id of " + id + " does not exist.", 404);
+            throw new WebApplicationException("Car with id of " + id + " does not exist.", 404);
         }
         return entity;
     }
