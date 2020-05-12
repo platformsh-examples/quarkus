@@ -9,5 +9,6 @@
   
   <modules>
       <module>jpa</module>
+      <module>panache</module>
   </modules>
 </project>

@@ -63,13 +63,13 @@ public class AnimalResource {
     @Transactional
     public Animal update(@PathParam Integer id, Animal animal) {
         if (animal.getName() == null) {
-            throw new WebApplicationException("Fruit Name was not set on request.", 422);
+            throw new WebApplicationException("Animal Name was not set on request.", 422);
         }
 
         Animal entity = entityManager.find(Animal.class, id);
 
         if (entity == null) {
-            throw new WebApplicationException("Fruit with id of " + id + " does not exist.", 404);
+            throw new WebApplicationException("Animal with id of " + id + " does not exist.", 404);
         }
 
         entity.setName(animal.getName());
@@ -83,7 +83,7 @@ public class AnimalResource {
     public Response delete(@PathParam Integer id) {
         Animal entity = entityManager.getReference(Animal.class, id);
         if (entity == null) {
-            throw new WebApplicationException("Fruit with id of " + id + " does not exist.", 404);
+            throw new WebApplicationException("Animal with id of " + id + " does not exist.", 404);
         }
         entityManager.remove(entity);
         return Response.status(204).build();
