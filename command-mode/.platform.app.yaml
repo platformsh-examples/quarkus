@@ -1,0 +1,19 @@
+name: app
+
+type: "java:11"
+disk: 1024
+
+hooks:
+    build: ./mvnw package -DskipTests -Dquarkus.package.uber-jar=true
+
+relationships:
+    database: "db:postgresql"
+
+crons:
+    anagram:
+        spec: '*/5 * * * *'
+        cmd: java $JAVA_OPTS $CREDENTIAL -cp target/command-mode-1.0-SNAPSHOT-runner.jar org.acme.hibernate.orm.BatchApp
+
+web:
+    commands:
+        start: java -jar $JAVA_OPTS $CREDENTIAL -Dquarkus.http.port=$PORT target/command-mode-1.0-SNAPSHOT-runner.jar

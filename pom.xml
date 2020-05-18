@@ -11,5 +11,6 @@
       <module>jpa</module>
       <module>panache</module>
       <module>elasticsearch</module>
+      <module>command-mode</module>
   </modules>
 </project>
