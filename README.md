@@ -25,7 +25,7 @@ The following files and additions make the framework work.  If using this projec
 
 ## Articles
 
-| Article                                                      |                                                       source |
+| Article                                                      |                                                      Links |
 | ------------------------------------------------------------ | -----------------------------------------------------------: |
 | [Hibernate Search With Elasticsearch](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-1) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/elasticsearch) |
 | [PostgreSQL With Panache](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/panache) |
