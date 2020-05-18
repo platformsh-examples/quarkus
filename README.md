@@ -21,3 +21,14 @@ The following files and additions make the framework work.  If using this projec
 * [Maven](https://maven.apache.org/)
 * [Quarkus](https://quarkus.io/)
 * [Java at Platform.sh](https://docs.platform.sh/languages/java.html)
+
+
+## Articles
+
+| Article                                                      |                                                       source |
+| ------------------------------------------------------------ | -----------------------------------------------------------: |
+| [Hibernate Search With Elasticsearch](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-1) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/elasticsearch) |
+| [PostgreSQL With Panache](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/panache) |
+| [PostgreSQL with JPA](https://dzone.com/articles/quarkus-supersonic-subatomic-java-deploy-faster-in) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/jpa) |
+| [Hello World](https://dzone.com/articles/quarkus-supersonic-subatomic-java-goes-faster-in-t) |    [Source](https://github.com/platformsh-templates/quarkus) |
+
