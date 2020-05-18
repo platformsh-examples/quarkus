@@ -12,5 +12,6 @@
       <module>panache</module>
       <module>elasticsearch</module>
       <module>command-mode</module>
+      <module>mongo-db-panache</module>
   </modules>
 </project>
