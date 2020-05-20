@@ -25,10 +25,19 @@ The following files and additions make the framework work.  If using this projec
 
 ## Articles
 
-| Article                                                      |                                                      Links |
+| Article                                                      |                                                        Links |
 | ------------------------------------------------------------ | -----------------------------------------------------------: |
+| [Panache MongoDB](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-3) |                                  [Source](mongo-db-panache/) |
+| [Command Mode Application](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-2) |                                      [Source](command-mode/) |
 | [Hibernate Search With Elasticsearch](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-1) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/elasticsearch) |
 | [PostgreSQL With Panache](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/panache) |
 | [PostgreSQL with JPA](https://dzone.com/articles/quarkus-supersonic-subatomic-java-deploy-faster-in) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/jpa) |
 | [Hello World](https://dzone.com/articles/quarkus-supersonic-subatomic-java-goes-faster-in-t) |    [Source](https://github.com/platformsh-templates/quarkus) |
 
+
+
+# Deploy Friday: E06 Quarkus Supersonic Subatomic Java
+
+
+
+https://www.youtube.com/watch?v=PLsaop5M14M
