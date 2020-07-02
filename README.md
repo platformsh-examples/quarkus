@@ -1,6 +1,6 @@
-# Quarkus for Platform.sh
+# Micronaut for Platform.sh
 
-Micronaut is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications.
+QuarkusIO, the Supersonic Subatomic Java, promises to deliver small artifacts, extremely fast boot time, and lower time-to-first-request. 
 
 ## Services
 
@@ -19,5 +19,25 @@ The following files and additions make the framework work.  If using this projec
 
 * [Platform.sh post](https://platform.sh/blog/2019/java-hello-world-at-platform.sh/)
 * [Maven](https://maven.apache.org/)
-* [Micronaut](https://micronaut.io/)
+* [Quarkus](https://quarkus.io/)
 * [Java at Platform.sh](https://docs.platform.sh/languages/java.html)
+
+
+## Articles
+
+| Article                                                      |                                                        Links |
+| ------------------------------------------------------------ | -----------------------------------------------------------: |
+| [Panache MongoDB](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-3) |                                  [Source](mongo-db-panache/) |
+| [Command Mode Application](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-2) |                                      [Source](command-mode/) |
+| [Hibernate Search With Elasticsearch](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh-1) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/elasticsearch) |
+| [PostgreSQL With Panache](https://dzone.com/articles/deploy-quarkus-faster-in-the-cloud-with-platformsh) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/panache) |
+| [PostgreSQL with JPA](https://dzone.com/articles/quarkus-supersonic-subatomic-java-deploy-faster-in) | [Source](https://github.com/platformsh-examples/quarkus/tree/master/jpa) |
+| [Hello World](https://dzone.com/articles/quarkus-supersonic-subatomic-java-goes-faster-in-t) |    [Source](https://github.com/platformsh-templates/quarkus) |
+
+
+
+# Deploy Friday: E06 Quarkus Supersonic Subatomic Java
+
+
+
+https://www.youtube.com/watch?v=PLsaop5M14M
