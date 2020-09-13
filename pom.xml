@@ -9,6 +9,7 @@
   
   <modules>
       <module>jpa</module>
+      <module>jpa-angular</module>
       <module>panache</module>
       <module>elasticsearch</module>
       <module>command-mode</module>
