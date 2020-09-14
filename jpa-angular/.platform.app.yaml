@@ -1,38 +1,10 @@
-# This file describes an application. You can have multiple applications
-# in the same project.
-#
-# See https://docs.platform.sh/user_guide/reference/platform-app-yaml.html
-
-# The name of this app. Must be unique within a project.
 name: app
-
-# The runtime the application uses.
 type: "java:11"
 disk: 1024
-
-# The hooks executed at various points in the lifecycle of the application.
 hooks:
     build: ./mvnw package -DskipTests
-
-# The relationships of the application with services or other applications.
-#
-# The left-hand side is the name of the relationship as it will be exposed
-# to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
-# side is in the form `<service name>:<endpoint name>`.
 relationships:
     database: "db:postgresql"
-
-# The configuration of app when it is exposed to the web.
 web:
     commands:
-        start: |
-            export HOST=`echo $PLATFORM_RELATIONSHIPS|base64 -d|json_pp|jq -r ".database[0].host"`
-            export PASSWORD=`echo $PLATFORM_RELATIONSHIPS|base64 -d|json_pp|jq -r ".database[0].password"`
-            export USER=`echo $PLATFORM_RELATIONSHIPS|base64 -d|json_pp|jq -r ".database[0].username"`
-            export DATABASE=`echo $PLATFORM_RELATIONSHIPS|base64 -d|json_pp|jq -r ".database[0].path"`
-            java -jar -Xmx$(jq .info.limits.memory /run/config.json)m -XX:+ExitOnOutOfMemoryError \
-            -Dquarkus.http.port=$PORT \
-            -Dquarkus.datasource.username=$USER \
-            -Dquarkus.datasource.password=$PASSWORD \
-            -Dquarkus.datasource.jdbc.url=jdbc:postgresql://${HOST}/${DATABASE} \
-            target/jpa-1.0-SNAPSHOT-runner.jar
+        start: java -jar $JAVA_OPTS $CREDENTIAL target/jpa-1.0-SNAPSHOT-runner.jar
