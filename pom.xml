@@ -14,5 +14,6 @@
       <module>elasticsearch</module>
       <module>command-mode</module>
       <module>mongo-db-panache</module>
+      <module>redis</module>
   </modules>
 </project>
