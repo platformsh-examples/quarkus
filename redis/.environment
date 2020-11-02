@@ -1,0 +1,6 @@
+export REDIS_HOST=`echo $PLATFORM_RELATIONSHIPS|base64 -d|jq -r ".redis[0].host"`
+export REDIS_PORT=`echo $PLATFORM_RELATIONSHIPS|base64 -d|jq -r ".redis[0].port"`
+export REDIS=redis://${REDIS_HOST}:${REDIS_PORT}
+export JAVA_MEMORY=-Xmx$(jq .info.limits.memory /run/config.json)m
+export JAVA_OPTS="$JAVA_MEMORY -XX:+ExitOnOutOfMemoryError"
+export CREDENTIAL="-Dquarkus.redis.hosts=$REDIS"
