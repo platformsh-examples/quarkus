@@ -1,6 +1,6 @@
-# Micronaut for Platform.sh
+# Quarkus for Platform.sh
 
-QuarkusIO, the Supersonic Subatomic Java, promises to deliver small artifacts, extremely fast boot time, and lower time-to-first-request. 
+Quarkus, the Supersonic Subatomic Java, promises to deliver small artifacts, extremely fast boot time, and lower time-to-first-request. 
 
 ## Services
 
